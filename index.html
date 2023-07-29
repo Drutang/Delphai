@@ -6,16 +6,18 @@
          color: #fff;
          text-align: center;
          font-size: 99px;
-         font-family: "Tahoma";
+         font-family: "Arial, sans-serif";
       }
       body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 20px;
-        background-image: url("parthenon.jpeg");
-        background-repeat: repeat;
-        background position: center;
-        background-size: cover;
+   
+        background: url("parthenon.jpeg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
       }
 
       .container {
@@ -26,7 +28,13 @@
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+
         
+      }
+
+      .logo {
+        position: relative;
+        width: 100%;
       }
 
       .pay-button {
@@ -35,8 +43,8 @@
         padding: 10px;
         font-size: 16px;
         font-weight: bold;
-        background-color: #007bff;
-        color: #fff;
+        background-color: #333 ;
+        color: #D70040 ; 
         border: none;
         border-radius: 4px;
         cursor: pointer;
@@ -60,7 +68,8 @@
   </head>
   <body>
     <div class="container">
-      <button class="pay-button">Enter Now</button>
+      <img class="logo" src="bg-logo.png"></img>
+      <button class="pay-button">Offer Tribute</button>
       <div id="status"></div>
     </div>
     <script type="text/javascript">
